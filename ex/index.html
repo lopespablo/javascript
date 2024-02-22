@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+
+
+        .interface{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+
+        }
+        
+        .flex{
+            display: flex;
+            border: 1px solid black;
+            height: 200px;
+            width: 300px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="interface">
+            <div class="flex">
+                <div class="conteudo">
+                    <h1>Veja se Você é Bresileiro</h1>
+                    
+                    <input type="text" name="" id="pais1">
+                    <input type="button" value="teste" onclick="clicar()">
+                    <div id="res"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        
+
+        function clicar() {
+            var pis1= document.getElementById('pais1')
+            var ps= (pis1.value)
+            var res= document.getElementById('res')
+            
+            
+            if (ps == 'brasil') {
+                res.innerHTML = 'voce é brasileiro'
+            }else{
+                res.innerHTML = 'voce é estrangeiro'
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>
